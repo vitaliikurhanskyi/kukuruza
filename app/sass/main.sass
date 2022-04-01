@@ -1,0 +1,493 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	font-family: "OpenSansRegular", sans-serif
+	font-weight: normal
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+/* typography */
+
+h2
+	line-height: 30px
+
+h3
+	line-height: 22px
+
+.hr
+	width: 100%
+	height: 1px
+	background-color: #000
+	display: block
+/*top header*/
+
+.wrapper
+	background-color: #FF6F31
+
+.section-wrapper
+	padding: 0 5%
+
+.section-wrapper-top
+	padding-top: 3%
+
+.top-content
+	//border: 1px solid #000
+	background-color: #FFF7F3
+
+.wrapper-content
+	background-color: #FFF7F3
+
+.top-header
+	display: flex
+	border-bottom: 1px solid #000
+
+.logo
+	flex-basis: 50%
+
+.menu
+	flex-basis: 50%
+
+.header__image
+	margin-top: 30px
+
+.logo__link
+	display: flex
+	text-decoration: none
+	text-transform: uppercase
+	color: #000
+	align-items: center
+	justify-content: center
+	height: 44px
+
+.logo__h1
+	margin: 0
+	color: #000
+	font-size: 16px
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+
+.menu__btn
+	display: flex
+	width: 100%
+	height: 45px
+	padding: 0
+	border: none
+	background-color: #000
+	color: #FFF7F3
+	text-transform: uppercase
+	align-items: center
+	justify-content: center
+	font-size: 16px
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+	text-decoration: none
+
+.header-picture img
+	width: 100%
+	margin-top: 15px
+
+.header-h2
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+	text-transform: uppercase
+	display: block
+	color: #000
+	font-size: 30px
+
+.header-h2__course
+	display: block
+	color: #FF6F31
+	font-size: 23px
+
+.header-h2__h2
+	display: block
+	color: #000
+	font-size: 30px
+
+.heder-text
+	font-size: 14px
+	color: #000
+	font-family: "OpenSansRegular", sans-serif
+	font-weight: normal
+	p
+		margin-top: 0
+
+.duration
+	color: #5600DE
+	font-size: 18px
+	text-transform: uppercase
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+
+.button-buy
+	display: flex
+	border: 1px solid #000
+	background-color: #5600DE
+	color: #fff
+	width: 215px
+	height: 65px
+	text-transform: uppercase
+	justify-content: center
+	text-align: center
+	align-items: center
+	text-decoration: none
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+	font-size: 14.39px
+	transform-style: preserve-3d
+	position: relative
+
+.button-buy:before
+	content: ""
+	display: block
+	width: 215px
+	height: 65px
+	border: 1px solid #000
+	background-color: #fff
+	transform: translateZ(-1px)
+	position: absolute
+	top: 7px
+	left: 7px
+
+.button-request
+	display: flex
+	border: 1px solid #000
+	background-color: #fff
+	color: #5600DE
+	width: 215px
+	height: 65px
+	text-transform: uppercase
+	justify-content: center
+	text-align: center
+	align-items: center
+	text-decoration: none
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+	font-size: 14.39px
+	transform-style: preserve-3d
+	position: relative
+
+.button-request:before
+	content: ""
+	display: block
+	width: 215px
+	height: 65px
+	border: 1px solid #000
+	background-color: #5600DE
+	transform: translateZ(-1px)
+	position: absolute
+	top: 7px
+	left: 7px
+
+.header__buttons
+	margin: 25px 0
+
+.text-wrapper
+	padding: 20px
+
+.wrapper-content
+	border-left: 1px solid #000
+	border-right: 1px solid #000
+
+.top-content
+	border-top: 1px solid #000
+
+/* Course Program */
+
+.course-program
+	border-top: none
+
+.modules-info
+	color: #FF6F31
+	text-transform: uppercase
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+	font-size: 12px
+
+.course-h2
+	margin-bottom: 0
+
+.modules__info
+	display: flex
+	justify-content: space-between
+
+.modules__week
+	padding-right: 2px
+
+.modules__h3
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+	font-size: 18px
+	text-transform: uppercase
+
+.modules__ul
+	height: 100%
+	//background-color: green
+	padding: 0 30px
+	ul
+		list-style-type: none
+
+		display: block
+		:before
+			content: ""
+			position: absolute
+			left: -50px
+			top: -5px
+			//display: flex
+			width: 37px
+			height: 37px
+			//background-color: red
+			background-image: url("../img/star.png")
+			justify-content: center
+			text-align: center
+			align-items: center
+			background-repeat: no-repeat
+
+		li
+			margin: 45px 0
+			display: block
+			position: relative
+			font-size: 16px
+			color: #000
+			font-family: "OpenSansRegular", sans-serif
+			font-weight: normal
+
+.cell-wrapper
+	width: 100%
+	border-bottom: 1px solid #000
+	background-color: rgba(197, 239, 116, 0.2)
+
+.cell-wrapper__background
+	height: 100%
+	background: linear-gradient(#000, transparent 1px), linear-gradient(90deg, #000, transparent 1px)
+	background-size: 75px 75px
+	//background-size: 15% 25%
+
+.section-background
+	background-color: #FFF7F3
+	//margin: 0 5%
+	//border-right: 1px solid #000
+	position: relative
+	display: block
+
+.text-list
+	background-color: #fff
+	display: inline-block
+	margin: 7% 7% 7% 5%
+	position: relative
+	z-index: 3
+	border: 1px solid #000
+	box-shadow: 9px 10px #FF6F31, 10px 10px #000, 10px 12px #000, 10px 9px #000, 8px 12px #000
+
+.text-list__ul
+	list-style: none
+	padding: 0 0 0 22px
+
+.text-list__ul li
+	position: relative
+	margin: 20px 0
+
+.text-list__ul li:before
+	content: ""
+	position: absolute
+	width: 10px
+	height: 10px
+	display: flex
+	background-image: url("../img/li-dot.png")
+	background-repeat: no-repeat
+	background-color: transparent
+	background-position: center
+	top: 7px
+	left: -18px
+
+.heder-module
+	padding-left: 5px
+
+.modules-info-purple
+	color: #5600DE
+
+.course-for__num
+	color: #FF6F31
+	font-size: 18px
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+
+.course-for__h3
+	font-size: 18px
+	color: #000
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+
+.course-for__p
+	padding-left: 20px
+	padding-right: 5px
+	display: inline-block
+	position: relative
+
+.course-for__p:before
+	content: ""
+	position: absolute
+	background-image: url("../img/li-dot.png")
+	width: 10px
+	height: 10px
+	display: flex
+	top: 7px
+	left: -1px
+	background-repeat: no-repeat
+	background-color: transparent
+	background-position: center
+	z-index: 1
+
+.clients
+	display: block
+	text-align: center
+
+.client
+	display: inline-block
+	width: 31%
+	height: 50px
+
+.client img
+	width: 70%
+	display: inline-block
+	vertical-align: middle
+
+.client:first-child
+	margin-left: 8px
+
+.clients-h2
+	margin-bottom: 20px
+	margin-top: 70px
+
+.text-proce__padding
+	padding: 0 5%
+	p
+		font-family: "ErmilovBold", sans-serif
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 14px
+
+.text-price
+	background-color: #fff
+	width: 95%
+	border-top: 1px solid #000
+	border-right: 1px solid #000
+	border-bottom: 1px solid #000
+	padding: 15px 0 10px 0
+	box-shadow: 16px 16px #000
+	position: relative
+	z-index: 2
+	transform-style: preserve-3d
+
+.text-price:after
+	content: "69$"
+	position: absolute
+	width: 100.5%
+	display: block
+	height: 70px
+	background-color: #000
+	right: -17.5px
+	bottom: -65px
+	padding-top: 10px
+	padding-left: 10px
+	font-size: 30px
+	color: #fff
+	font-family: "ErmilovBold", sans-serif
+	font-weight: 700
+	z-index: -1
+	transform: translateZ(-1px)
+
+.wrapper-content-margin-top
+	padding-top: 150px
+
+.button-buy-width
+	width: 100%
+
+.button-buy-width:before
+	width: 100%
+
+.button-request-width
+	width: 100%
+
+.button-request-width:before
+	width: 100%
+
+.footer-logo__link
+	justify-content: flex-start
+
+.footer-logo__h3
+	font-size: 30px
+	justify-content: flex-start
+	padding-left: 10%
+
+.footer-links
+	list-style: none
+	padding-left: 10%
+	border-bottom: 1px solid #000
+
+.footer-links__a
+	text-decoration: none
+	color: #000
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце

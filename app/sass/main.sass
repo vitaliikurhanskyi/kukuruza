@@ -46,6 +46,7 @@ body
 	overflow-x: hidden
 	font-family: "OpenSansRegular", sans-serif
 	font-weight: normal
+	background-color: #FF6F31
 
 .img-responsive
 	display: block
@@ -72,10 +73,17 @@ h3
 	height: 1px
 	background-color: #000
 	display: block
+
+a:hover
+	color: #5600DE
+	transition: 0.5s
+
 /*top header*/
 
 .wrapper
 	background-color: #FF6F31
+	max-width: 1740px
+	margin: 0 auto
 
 .section-wrapper
 	padding: 0 5%
@@ -110,7 +118,7 @@ h3
 	color: #000
 	align-items: center
 	justify-content: center
-	height: 44px
+	height: 45px
 
 .logo__h1
 	margin: 0
@@ -146,6 +154,7 @@ h3
 	display: block
 	color: #000
 	font-size: 30px
+	padding-left: 0
 
 .header-h2__course
 	display: block
@@ -201,6 +210,7 @@ h3
 	position: absolute
 	top: 7px
 	left: 7px
+	transition: 0.3s
 
 .button-request
 	display: flex
@@ -231,6 +241,7 @@ h3
 	position: absolute
 	top: 7px
 	left: 7px
+	transition: 0.3s
 
 .header__buttons
 	margin: 25px 0
@@ -259,6 +270,10 @@ h3
 
 .course-h2
 	margin-bottom: 0
+	display: inline-block
+	padding-bottom: 40px
+	padding-top: 30px
+	padding-left: 48px
 
 .modules__info
 	display: flex
@@ -305,6 +320,8 @@ h3
 			font-family: "OpenSansRegular", sans-serif
 			font-weight: normal
 
+
+
 .cell-wrapper
 	width: 100%
 	border-bottom: 1px solid #000
@@ -331,6 +348,9 @@ h3
 	z-index: 3
 	border: 1px solid #000
 	box-shadow: 9px 10px #FF6F31, 10px 10px #000, 10px 12px #000, 10px 9px #000, 8px 12px #000
+
+.text-list-color
+	box-shadow: 9px 10px #5600DE, 10px 10px #000, 10px 12px #000, 10px 9px #000, 8px 12px #000
 
 .text-list__ul
 	list-style: none
@@ -471,17 +491,146 @@ h3
 .footer-logo__h3
 	font-size: 30px
 	justify-content: flex-start
-	padding-left: 10%
 
 .footer-links
 	list-style: none
-	padding-left: 10%
-	border-bottom: 1px solid #000
+	padding-bottom: 10%
+	padding-left: 0
 
 .footer-links__a
 	text-decoration: none
 	color: #000
 
+.payment
+	display: inline-block
+	height: 100%
+	padding-left: 20px
+
+.payment:first-child
+	padding-left: 0
+
+.payment__img
+	width: 100%
+	vertical-align: middle
+
+.footer-payment
+	padding-top: 6%
+
+.policy__a
+	text-decoration: none
+	color: #000
+	display: block
+	padding: 2% 0 1% 0
+
+.policy__a:first-child
+	margin-top: 8%
+
+.footer
+	border-bottom: 1px solid #000
+	padding-bottom: 10%
+
+.section-footer
+	padding-bottom: 20px
+
+.footer-logo
+	padding-top: 7%
+
+.text-wrapper-margin-bottom
+	padding-bottom: 25%
+
+.modules__ul br
+	display: none
+
+.course-sections__section:last-child
+	border-bottom: 1px solid #000
+
+.course-for
+	padding: 25px
+
+.footter-section__border
+	border-top: 1px solid #000
+
+.course-sections__section
+	border-top: 1px solid #000
+
+.course-for__num
+	padding-top: 10px
+
+.menu-logo
+	display: block
+	color: #fff
+
+.menu-links
+	list-style-type: none
+	padding: 0
+
+.menu-links a
+	text-decoration: none
+	color: #fff
+	padding: 10px 0
+	display: block
+
+.modal-menu
+	background-color: #5600DE
+	height: 100vh
+	position: relative
+
+.social-icons__link
+	margin-left: 20px
+	display: inline-block
+	margin-bottom: 10px
+
+.social-icons__link:first-child
+	margin-left: 0
+
+.social-icons
+	position: absolute
+	bottom: 5%
+
+.close-menu
+	position: absolute
+	right: 10%
+	top: 20px
+
+.menu-logo
+	border-right: none !important
+
+.close-menu
+	top: 20px
+
+.modal-menu-position
+	position: absolute
+	display: block
+	width: 100%
+	z-index: 9999
+	top: -100vh
+	transition: .7s
+	max-width: 1740px
+	margin: 0 auto
+
+.toogle-menu
+	top: 0
+	transition: .7s
+
+.button-buy:hover
+	color: #5600DE
+	background-color: #fff
+	transition: 0.5s
+
+.button-buy:hover:before
+	top: 0
+	left: -1px
+	transition: 0.3s
+
+.button-request:hover
+	color: #fff
+	background-color: #5600DE
+	transition: 0.5s
+
+.button-request:hover:before
+	top: 0
+	left: -1px
+	transition: 0.3s
 
 
 
